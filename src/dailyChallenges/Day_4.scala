@@ -24,16 +24,9 @@ object Day_4 {
     else false
   }
 
-  def cool(string: String): Boolean = {
-    val str = string.replace("""\{*\}""","")
-    println(str)
-    if(str.isEmpty) true
-    else false
-  }
-
 
   def main(args: Array[String]): Unit = {
-    cool("{((())}")
+    println(parenthesisCompleteness("{())}"))
   }
 
 }
