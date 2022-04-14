@@ -8,17 +8,17 @@ package dailyChallenges
 object Day_5 {
 
   def first_last_entry(list: Array[Int], target: Int): Array[Int] ={
-    if(!list.contains(target)) new Array[Int](-1,-1)
+    if(!list.contains(target)) Array(-1,-1)
 
     val last = list.lastIndexOf(target)
 
     val first = list.indexOf(target)
 
-    new Array[Int](first,last)
+    Array(first,last)
   }
 
 
   def main(args: Array[String]): Unit = {
-    first_last_entry((1,2,3,4,5,6,10), 9)
+    println(first_last_entry(Array(1,2,3,4,5,6,9,9,9,9,9,9,9,10), 9).mkString(";"))
   }
 }
