@@ -1,5 +1,9 @@
 package dailyChallenges
 
+//TODO: do time complexity and readability analysis, optimize in a separate folder
+
+//Given a string, find the length of the longest substring without repeating characters.
+
 object Day_4 {
 
   def charMatch(str: String): Boolean ={
